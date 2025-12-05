@@ -616,6 +616,7 @@ export default function AdminShifts() {
                       dataKey="regularOffset"
                       stackId="a"
                       fill="transparent"
+                      radius={[0, 10, 10, 0]}
                     />
 
                     {/* 2. Overtime BEFORE 8 AM (orange) */}
@@ -645,6 +646,7 @@ export default function AdminShifts() {
                           key={`regular-${index}`}
                           fill={item.color}
                           opacity={0.9}
+                          radius={[0, 10, 10, 0]}
                         />
                       ))}
                     </Bar>
@@ -654,7 +656,7 @@ export default function AdminShifts() {
                       dataKey="overtimeDuration"
                       stackId="a"
                       barSize={30}
-                      radius={[0, 10, 10, 0]} // Rounded right if it's the end
+                      radius={[0, 10, 10, 0]}
                     >
                       {timelineData.map((item, index) => (
                         <Cell
@@ -674,6 +676,7 @@ export default function AdminShifts() {
                       dataKey="overtimeAfterOffset"
                       stackId="c"
                       fill="transparent"
+                      radius={[0, 10, 10, 0]}
                     />
 
                     {/* Overtime AFTER 6 PM */}
@@ -692,6 +695,7 @@ export default function AdminShifts() {
                               : "transparent"
                           }
                           opacity={0.9}
+                          radius={[0, 10, 10, 0]}
                         />
                       ))}
                     </Bar>
