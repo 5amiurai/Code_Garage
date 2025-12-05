@@ -108,13 +108,4 @@ Copy code
 
 ---
 
-## 3. Next steps for you
-
-1. Make sure your code is actually pushed (`git push portfolio main` with the remote fixed).
-2. Replace your existing `README.md` content with the markdown above.
-3. Commit it:
-
-```bash
-git add README.md
-git commit -m "Add professional README for Code_Garage"
-git push portfolio main
+Code Garage Team
