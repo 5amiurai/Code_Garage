@@ -53,58 +53,70 @@ The application is structured as a typical full-stack web system:
    cd Code_Garage
 Install dependencies:
 
-bash
-Copy code
+bash:
 npm install
 # or
 yarn install
+
 Environment variables:
 
 Create a .env.local file in the project root and add your own values:
 
-env
-Copy code
-DATABASE_URL=your_mysql_connection_string
-NEXTAUTH_SECRET=your_secret
-# add anything else your app uses
-Run the development server:
+env:
 
-bash
-Copy code
+DATABASE_URL=your_mysql_connection_string
+NEXTAUTH_SECRET=your_generated_secret
+NEXTAUTH_URL=http://localhost:3000
+
+# Google OAuth
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+
+# Google Maps
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_key
+
+# Database (local setup)
+DB_HOST=localhost
+DB_PORT=3307
+DB_USER=garage_user
+DB_PASSWORD=your_db_password
+DB_NAME=code_garage_db
+
+bash:
 npm run dev
 # or
 yarn dev
 Open http://localhost:3000 in your browser.
 
-My Contributions
-This was a collaborative project. My main responsibilities included:
+---
 
-Designing and implementing the backend scheduling and booking logic
+My Contributions:
 
-Creating and refining the database schema and relationships
+1.This was a collaborative project. My main responsibilities included:
 
-Building key UI components for the shifts / schedule view and dashboards
+2.Designing and implementing the backend scheduling and booking logic
 
-Handling incident debugging, bug fixes, and performance issues
+3.Creating and refining the database schema and relationships
 
-Writing documentation and helping teammates with setup / environment issues
+4.Building key UI components for the shifts / schedule view and dashboards
 
-(Adjust this list to be exactly true to what you did.)
+5.Handling incident debugging, bug fixes, and performance issues
 
-Future Improvements
-Role-based permissions for mechanics, admins, and reception
+6.Writing documentation and helping teammates with setup / environment issues
 
-More detailed analytics and reporting (revenue, load, repeat customers)
+---
 
-Integration with email/SMS notifications
+Future Improvements:
 
-Support for multiple shop locations
+1.Role-based permissions for mechanics, admins, and reception
 
-Status
-✅ Actively maintained as part of an ongoing capstone project.
+2.More detailed analytics and reporting (revenue, load, repeat customers)
 
-yaml
-Copy code
+3.Integration with email/SMS notifications
+
+4.Support for multiple shop locations
+
+
 
 ---
 
